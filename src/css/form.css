@@ -98,6 +98,7 @@
     flex-wrap: wrap;
     gap: 24px;
     justify-content: center;
+    margin-bottom: 100px;
   }
   .gallery li {
     position: relative;
@@ -133,6 +134,22 @@
   .gallery span {
     font-weight: 400;
     line-height: 2;
+  }
+  .loadmorebtn {
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #4e75ff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: var(--font-family);
+    cursor: pointer;
+  }
+  .loadmorebtn:hover {
+    background-color: #6c8cff;
   }
 }
 @media screen and (min-width: 768px) {

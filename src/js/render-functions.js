@@ -47,3 +47,5 @@ export function refreshLightbox() {
     galleryLightbox = new SimpleLightbox('.js-gallery a'); // или твой селектор
   }
 }
+
+////////////////////

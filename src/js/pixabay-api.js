@@ -22,9 +22,9 @@ import axios from 'axios';
 //     });
 // }
 ////////////////////////////////////////////////////////////////////////////
-// axios.defaults.baseURL = 'https://pixabay.com/api/';
+axios.defaults.baseURL = 'https://pixabay.com/api/';
 
-export const getImagesByQuery = searchedQuery => {
+export const getImagesByQuery = (searchedQuery, page, perPage) => {
   const options = {
     params: {
       key: '51390030-b864bce351d7615980478c23b',
@@ -32,10 +32,11 @@ export const getImagesByQuery = searchedQuery => {
       image_type: 'photo',
       orientation: 'horizontal',
       safesearch: true,
-      per_page: 9,
+      per_page: perPage,
+      page: page,
     },
   };
-  return axios.get('https://pixabay.com/api/', options);
+  return axios.get('', options);
 };
 
 export const getRandomImage = () => {
@@ -49,5 +50,5 @@ export const getRandomImage = () => {
       per_page: 9,
     },
   };
-  return axios.get('https://pixabay.com/api/', options);
+  return axios.get('', options);
 };
