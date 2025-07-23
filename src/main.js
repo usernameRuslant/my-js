@@ -4,3 +4,4 @@ import { onClickOnbuttonLoadMore } from './js/form-handlers.js';
 
 refs.form.addEventListener('submit', onSubmitSearchImg);
 refs.loadmorebtn.addEventListener('click', onClickOnbuttonLoadMore);
+///////////////////////////////////////////
